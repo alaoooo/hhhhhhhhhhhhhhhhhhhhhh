@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => { // هاذا للبرودكسات
-        var prefix = '-'; // هنا تقدر تغير البرفكس
+        var prefix = 'n'; // هنا تقدر تغير البرفكس
 	var command = message.content.split(" ")[0];
 	if(command == prefix + 'ebc') { // الكوماند ebc
 		if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don`t have **MANAGE_MESSAGES** permission!");
@@ -109,8 +109,8 @@ client.on('message',async message => {
 }
 });
  
-const adminprefix = "prefix";
-const devs = ['owner id'];
+const adminprefix = "n";
+const devs = ['558220897547452418'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -145,7 +145,7 @@ client.on('message', message => {
  message.author.sendMessage(`
  **
 مبرمج البوت  | Developers
-[ <@512625982751113216> ]
+[ <jak> ]
 [❖═════ General Commands ═══════❖]
 💎 -help 『 عرض قائمه المساعده 』   
 💎 -ebc  للنشر بايمبد
