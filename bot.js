@@ -58,7 +58,7 @@ client.on('message', message => { // هاذا للبرودكسات
 	}
 });
 
-var prefix = "prefix";
+var prefix = "n";
  
 client.on("message", message => {
  
